@@ -1,0 +1,154 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(93, 93, 93);
+}
+
+.naked-eye {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    animation: myframe3;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    
+    z-index: -1;
+    position: relative;
+  }
+  .eye {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    animation: myframe1;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    
+  }
+  
+  .lash-1 {
+    height: 75px;
+    width: 18px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 7px;
+    margin-right: 80px;
+    transform: rotate(160deg);
+  }
+  
+  .lash-2 {
+    height: 75px;
+    width: 18px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 7px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+  }
+  
+  .lash-3 {
+    height: 75px;
+    width: 18px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 7px;
+    transform: rotate(20deg);
+  }
+  .lash-div {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    align-items: center;
+  }
+  .eye-lid {
+    position: absolute;
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    
+    animation: myframe2;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes myframe1 {
+    0% {
+      margin-bottom: 100px;
+    }
+    50% {
+      margin-bottom: 0px;
+    }
+    100% {
+      margin-bottom: 100px;
+    }
+  }
+  
+  @keyframes myframe2 {
+    0% {
+      width: 100px;
+      height: 100px;
+      left: 70px;
+    }
+    10% {
+      width: 100px;
+      height: 100px;
+      left: 70px;
+      
+    }
+    20% {
+      width: 100px;
+      height: 100px;
+      left: 70px;
+    }
+    30% {
+      width: 100px;
+      height: 100px;
+      left: 70px;
+      bottom: 25px;
+    }
+    40% {
+      width: 100px;
+      height: 100px;
+    }
+    50% {
+      width: 100px;
+      height: 100px;
+      right: 70px;
+    }
+    60% {
+      width: 100px;
+      height: 100px;
+      right: 70px;
+      top: 25px;
+    }
+    70% {
+      width: 100px;
+      height: 100px;
+      right: 70px;
+      bottom: 25px;
+    }
+    80% {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  .text{
+    color: white;
+  }
